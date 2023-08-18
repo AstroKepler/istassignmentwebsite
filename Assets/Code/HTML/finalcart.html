@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <title>Penrith Computer Store</title> <!-- Title -->
+  <script type="text/javascript" src="array.js"></script> <!-- no clue -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <!-- makes stuff scalable with window size -->
+
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  /> <!-- For the cool looking ICONS -->
+
+  <link
+    rel="stylesheet"
+    href="/Assets/Code/CSS/ALLaccordian.css"
+  /> <!-- Accordians -->
+  <link
+    rel="stylesheet"
+    href="/Assets/Code/CSS/finalcart.css"
+  /> <!-- Accordians -->
+  <link
+    rel="stylesheet"
+    href="/Assets/Code/CSS/contactcss.css"
+  /> 
+  <link rel="stylesheet" href="/Assets/Code/CSS/fpStyle.css" />
+  <!-- the main page's css -->
+  <body>
+    <div class="navbar">
+      <a href="/index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="/Assets/Code/HTML/store.html"
+        ><i class="fa fa-fw fa-shopping-bag"></i> Store</a
+      >
+      <a class="active" href="/Assets/Code/HTML/finalcart.html"
+        ><i class="fa fa-fw fa-shopping-cart"></i> Cart</a
+      >
+      <a href="/Assets/Code/HTML/contact.html"
+        ><i class="fa fa-fw fa-envelope"></i> Contact</a
+      >
+      <a href="/Assets/Code/HTML/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="/Assets/Code/HTML/signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+      
+      <a href="/Assets/Code/HTML/faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+    </div> <!-- This Section is the Navbar, and is used to navigate through the different pages (fa fa-fw fa is the icon stuff) -->
+
+<h2>Checkout</h2>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form id="contact-form">
+      <!-- This contains all of the payment information -->
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required><!-- This is the first name (both names) -->
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required> <!-- email -->
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required> <!-- address -->
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Sydney" required> <!-- city -->
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label> <!-- state -->
+                <input type="text" id="state" name="state" placeholder="NSW" required><!-- state v2 -->
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="number" id="zip" name="zip" required max="10000" required min="700" placeholder="2748" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3> <!-- Payment -->
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container"><!-- shows different credit cars as icons -->
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label> <!-- name on the card -->
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required> <!-- required means that it cannot be done without it being filled in -->
+            <label for="ccnum">Credit card number</label>
+            <input type="number" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required min="1000000000000000"required max="9000000000000000"> <!-- made it so that it has to be 16 digits long -->
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" required> <!-- expiry month -->
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label><!--  --><!-- expiry year -->
+                <input type="number" id="expyear" name="expyear" placeholder="2018" required min="2023">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label><!-- cvv -->
+                <input type="number" id="cvv" name="cvv" placeholder="352" required min="100" required max="9999">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing 
+        </label><!-- shipping location -->
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart (Not Functioning) <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4><!-- broken cart -->
+      <p><a href="/Assets/Code/HTML/store.html"></a> <span class="price">$</span></p>
+      <p><a href="/Assets/Code/HTML/store.html"></a> <span class="price">$</span></p>
+      <p><a href="/Assets/Code/HTML/store.html"></a> <span class="price">$</span></p>
+      <p><a href="/Assets/Code/HTML/store.html"></a> <span class="price">$</span></p><!-- broken cart -->
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$</b></span></p>
+    </div>
+  </div>
+  <script src="/Assets/Code/JS/cart.js"></script>
+</body>
+</html>
+<!-- the end -->

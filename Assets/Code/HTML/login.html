@@ -1,0 +1,66 @@
+<!DOCTYPE html><!-- DOCTYPE -->
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- cool looking icons -->
+  <link rel="stylesheet" href="/Assets/Code/CSS/login.css">
+  <link rel="stylesheet" href="/Assets/Code/CSS/fpStyle.css">
+  <link rel="stylesheet" href="/Assets/Code/CSS/contactcss.css" />
+  <!-- stylesheets -->
+</head>
+
+<body>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="navbar"> <!-- the navigation bar -->
+    <a href="/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="/Assets/Code/HTML/store.html"><i class="fa fa-fw fa-shopping-bag"></i> Store</a>
+    <a href="/Assets/Code/HTML/finalcart.html"><i class="fa fa-fw fa-shopping-cart"></i> Cart</a>
+    <a href="/Assets/Code/HTML/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a class="active" href="/Assets/Code/HTML/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a href="/Assets/Code/HTML/signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+
+    <a href="/Assets/Code/HTML/faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+  </div>
+
+
+  <div class="container">
+    <form>
+      <div class="row">
+        <h2 style="text-align:center">Login Manually</h2> <!-- LOG IN MANUALLY OR ELSE -->
+        <div class="vl">
+          <span class="vl-innertext">or</span>
+        </div>
+
+
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Sign in</p>
+          </div>
+
+          <input type="email" name="username" placeholder="Email" required> <!-- makes the email validation slightly easier -->
+          <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" <!-- password validation -->
+            required>
+          <a href="/index.html" style="color:green" class="btn" <input type="submit"> Login</a>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+  <div class="bottom-container">
+    <div class="row">
+      <div class="col">
+        <a href="/Assets/Code/HTML/signup.html" style="color:white" class="btn">Sign up</a> <!-- Sign up sends you to the sign up page (big brain) -->
+      </div>
+      <div class="col">
+        <a href="/Assets/Code/HTML/forgotpassword.html" style="color:white" class="btn">Forgot password?</a> <!-- Sends to the forgot password page -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<!-- fin -->

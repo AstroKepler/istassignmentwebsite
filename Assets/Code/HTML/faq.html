@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <title>Penrith Computer Store</title> <!-- Title -->
+  <script type="text/javascript" src="array.js"></script> <!-- no clue -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <!-- makes stuff scalable with window size -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  /> <!-- For the cool looking ICONS -->
+
+  <link
+    rel="stylesheet"
+    href="/Assets/Code/CSS/ALLaccordian.css"
+  /> <!-- Accordians -->
+  <link
+    rel="stylesheet"
+    href="/Assets/Code/CSS/contactcss.css"
+  /> <!-- copy and paste for the about section -->
+  <link rel="stylesheet" href="/Assets/Code/CSS/fpStyle.css" />
+  <!-- the main page's css -->
+
+  <body>
+    <div class="navbar">
+      <a href="/index.html"
+        ><i class="fa fa-fw fa-home"></i> Home</a
+      >
+      <a href="/Assets/Code/HTML/store.html"
+        ><i class="fa fa-fw fa-shopping-bag"></i> Store</a
+      >
+      <a href="/Assets/Code/HTML/finalcart.html"
+        ><i class="fa fa-fw fa-shopping-cart"></i> Cart</a
+      >
+      <a href="/Assets/Code/HTML/contact.html"
+        ><i class="fa fa-fw fa-envelope"></i> Contact</a
+      >
+      <a href="/Assets/Code/HTML/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="/Assets/Code/HTML/signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+      
+      <a class="active" href="/Assets/Code/HTML/faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+    </div> <!-- This Section is the Navbar, and is used to navigate through the different pages (fa fa-fw fa is the icon stuff) -->
+  </body>
+
+  <div class="about-section">
+    <h1>Frequently Asked Questions</h1>
+    <p>Style sheet can be found at the final question!</p>
+  </div>
+  
+<button class="accordion">Question #1 - Why is the cart broken?</button>
+<div class="panel">
+  <p>Sadly, no amount of fixing seems to help fix the cart. Due to Replit's limitations, there seems to be no possible way to properly implement a saving cart with JS. PHP solutions where trialed, however, these solutions eventually came to nothing.</p>
+</div>
+    <!-- Accordians -->
+
+<button class="accordion">Question #2 - Why do Logins and Sign ups not save?</button>
+<div class="panel">
+  <p>Due to the limitations of the Replit, and the fact that transferring data to the database seems to be nearly impossible with my current coding skill. The use of AI, such as Bard, Bing AI, and ChatGPT was still not enough to create a working PHP data transfer script. I also tried using JS to transfer the data, however, this still did not work.</p>
+</div><!-- Accordians -->
+
+<button class="accordion">Question #3 - Why doesn't the checkout work?</button>
+<div class="panel">
+  <p>For safety reasons, I have chosen not to attempt to save the credit card and billing information, as saving billing information would be more realistic, it is not morally correct. This still does not mean you should put in your real information. The account you put in (Credit card/debit card) is not charged any amount, this is also for safety reasons, to prevent me stealing money.</p>
+</div><!-- Accordians -->
+  <button class="accordion">Question #4 - Why does the Website take abnormal times to load/Why does the website Crash?</button>
+<div class="panel">
+  <p>Due to the large complexity of the website, and tens of images to load when a page loads, the free Replit CPUs and RAM is not capable of handling the full website, and it may run out of resources when trying to load. For this reason, you maky experience long loading times, and the website might even break entirely. Sadly the only real way to improve this is to pay money for better resources, which I will not do.</p>
+</div><!-- Accordians -->
+  <button class="accordion">Question #5 - Why?</button>
+<div class="panel">
+  <p>IST Assignment</p>
+</div><!-- Accordians -->
+  <button class="accordion">Question #6 - Login Testing</button>
+<div class="panel">
+  <p>The way I tested the login page to make sure it only submit the data once the password and email was in, was by checking the validation by first submitting it with no data, and then submitting it with incorrect data. Last I checked, the login page will not work unless proper email is put in. The Login page does not need to have the payment/billing information, as it gets put in on checkout. In a real version, there may be an option to save both data points to the account.</p>
+</div><!-- Accordians -->
+  <button class="accordion">Question #7 - Signup Testing</button>
+<div class="panel">
+  <p>The signup test was conducted in a similar fashion to the login page, where no data was tried, incorrect data was tried, and then the proper data was tried. The sign up page has proper password validation, as opposed to the log in page, my reasoning for this, is that you cannot create an account without following the password rules. Therefore the password validation for the log in would not have mattered, and would have been more code onto the already fragile Replit, which struggles at times to run the full website</p>
+</div><!-- Accordians -->
+  <button class="accordion">Question #8 - Checkout/Cart Testing</button>
+<div class="panel">
+  <p>The checkout system, which has credit card validation, number validation, and others does work. The system in place prevents the user from typing incorrect data, and requires that the user puts in data which would make sense. However, the payment and billing information is not stored, like all other data, more multiple reasons. This prevents then prevents the validation from being perfect, as the data collected cannot be verified, as it is not being stored due to many complications.</p>
+</div><!-- Accordians -->
+  <button class="accordion">Question #9 - Why can't I see user settings</button>
+<div class="panel">
+  <p>You cannot see user settings, because there is no saved user settings.</p>
+</div>
+  <button class="accordion">Question #10 - Do people actually read the messages I send through the contact form?</button>
+<div class="panel">
+  <p>No unfortunately, due to Replit's settings, it is impossible to do.</p>
+</div>
+  <button class="accordion">Question #10 - What is the webiste's Style Sheet</button>
+<div class="panel">
+  <p>Here it is:</p>
+    <object data=
+"/Assets/PDFs/stylesheet.pdf" 
+                width="800"
+                height="1200">
+    </object>
+</div>
+  
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block"; //accordian stuff
+    }
+  });
+}
+</script><!-- Accordians --><!-- Accordians --><!-- Accordians -->
+  
+  
+</html>

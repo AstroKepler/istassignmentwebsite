@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/Assets/Code/CSS/fpStyle.css">
+<link rel="stylesheet" href="/Assets/Code/CSS/contactcss.css" />
+<link rel="stylesheet" href="/Assets/Code/CSS/shop.css" />
+<!--All of the Above are Stylesheets-->
+
+  
+<body>
+  <script src="/Assets/Code/JS/store.js"></script>
+  <div class="navbar">
+    <!--Navbar so you can navigate-->
+    <a href="/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a class="active" href="/Assets/Code/HTML/store.html"><i class="fa fa-fw fa-shopping-bag"></i> Store</a>
+    <a href="/Assets/Code/HTML/finalcart.html"><i class="fa fa-fw fa-shopping-cart"></i> Cart</a>
+    <a href="/Assets/Code/HTML/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="/Assets/Code/HTML/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a href="/Assets/Code/HTML/signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+
+    <a href="/Assets/Code/HTML/faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+  </div> <!-- All of this is the shop page (courtesy of CHAT GPT and some of my own skills)-->
+  <div class="about-section">
+    <h1>HP/Dell Home Desktops</h1>
+    <p>Great desktops for work and at home, streaming and much more!</p>
+  </div>
+  
+  <div class="shopping-cart"> <!-- Ok, I am only doing this once, but this is for the product section about the label above, Home desktops -->
+  <div class="items"> <!-- Effectively the box around the products -->
+    <div class="item">  <!-- this is the individual item -->
+      <img src=/Assets/Images/Computers/hpslim1.webp>  <!-- Displays the image of the product -->
+      <h2>HP Slim Desktop</h2> <!-- This is the product name -->
+      <p>Price: $959.00</p> <!-- this is the price -->
+      <p>Comes stock with a i5-12500 CPU, inbuilt UHD graphics, and 512GB storage</p> <!-- Desciption -->
+      <button class="add-to-cart" onclick="addToCart('HPSlim1', 959)">Add to Cart</button> <!-- allows the product to be added to cart with the name and price-->
+    </div><!-- div end --> <!-- That is it you gotta imagine what i said for the other products cause this would take to long to write -->
+    <div class="item">
+      <img src=/Assets/Images/Computers/hpbig1.webp>
+      <h2>HP Big Desktop</h2>
+      <p>Price: $879.00</p>
+      <p>Comes stock with a i7-12700 CPU, inbuilt UHD graphics, and 1TB storage</p>
+      <button class="add-to-cart" onclick="addToCart('HPBig1', 879)">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src=/Assets/Images/Computers/HPElite.webp>
+      <h2>HP Elite Mini Desktop</h2>
+      <p>Price: $1,985.00</p>
+      <p>Comes stock with a i5-12500 CPU, inbuilt UHD graphics, and 2TB storage</p>
+      <button class="add-to-cart" onclick="addToCart('HPElite1', 1985)">Add to Cart</button>
+    </div>
+    <div class="item">
+       <img src=/Assets/Images/Computers/DellInspiron.webp>
+      <h2>Dell Inspiron Desktop</h2>
+      <p>Price: $995.50</p>
+      <p>Comes stock with a i7-11500 CPU, inbuilt XE graphics, and 512GB storage</p>
+      <button class="add-to-cart" onclick="addToCart('DellInspiron', 995.5)">Add to Cart</button>
+    </div>
+    <div class="item">
+       <img src=/Assets/Images/Computers/DellOptiplex.webp>
+      <h2>Dell OptiPlex Desktop</h2>
+      <p>Price: $1,661.00</p>
+       <p>Comes stock with a i5-11500 CPU, inbuilt UHD graphics, and 512GB storage</p>
+      <button class="add-to-cart" onclick="addToCart('DellOptiPlex', 1661)">Add to Cart</button>
+    </div>
+    <div class="item">
+       <img src=/Assets/Images/Computers/DellXPS.webp>
+      <h2>Dell XPS Desktop</h2>
+      <p>Price: $1,895.30</p>
+       <p>Comes stock with an Intel i7-11700 CPU, nVidia RTX 3070, and 2TB storage</p>
+      <button class="add-to-cart" onclick="addToCart('DellXPS', 1895.3)">Add to Cart</button>
+    </div>
+    
+  </div>
+    
+  </div>
+  <div class="about-section">
+    <h1>Gaming Computers</h1>
+    <p>If you want to game, this is the right place, with all the latest specs for the true gamers out there.</p>
+  </div>
+  
+  <div class="shopping-cart">
+    <div class="items">
+      <div class="item">
+        <img src=/Assets/Images/Computers/HPOmen.webp>
+        <h2>HP Omen Desktop</h2>
+        <p>Price: $5,299.30</p>
+        <p>Comes stock with an Intel i9-11900 CPU, nVidia RTX 4080, and 2TB storage</p>
+        <button class="add-to-cart" onclick="addToCart('HPOmen', 5299.3)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/DellAlienwareDesktop.webp>
+        <h2>Dell Alienware Desktop</h2>
+        <p>Price: $5,498.90</p>
+        <p>Comes stock with an Intel i9-11900 CPU, nVidia RTX 4080ti, and 2TB storage</p>
+        <button class="add-to-cart" onclick="addToCart('DellAlienware', 5498.9)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="about-section">
+    <h1>Laptops</h1>
+    <p>Capable machines for mobile use, on the road and travelling. Laptops are great for all round use anywhere</p>
+  </div>
+  
+   
+  <div class="shopping-cart">
+    <div class="items">
+      <div class="item">
+        <img src=/Assets/Images/Computers/DellLaptop.webp>
+        <h2>Dell Inspiron 15 Laptop</h2>
+        <p>Price: $796.30</p>
+        <button class="add-to-cart" onclick="addToCart('Dell-Inspiron-15-Laptop', 796.3)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/DellLaptop2.webp>
+        <h2>Dell Inspiron 16 Laptop</h2>
+        <p>Price: $1299.95</p>
+        <button class="add-to-cart" onclick="addToCart('Dell-Inspiron-16-Laptop', 1299.95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/DellLaptop3.webp>
+        <h2>Dell 13 XPS Plus Laptop</h2>
+        <p>Price: $2499.95</p>
+        <button class="add-to-cart" onclick="addToCart('Dell-13-XPS-Plus-Laptop', 2499.95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/HPLaptop1.webp>
+        <h2>HP ProBook 14 Inch Laptop</h2>
+        <p>Price: $1696.30</p>
+        <button class="add-to-cart" onclick="addToCart('HP-ProBook-14-Laptop', 1696.3)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/HPLaptop1.webp>
+        <h2>HP ProBook 16 Inch Laptop</h2>
+        <p>Price: $1899.95</p>
+        <button class="add-to-cart" onclick="addToCart('HP-ProBook-16-Laptop', 1899.95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/HPLaptop1.webp>
+        <h2>HP EliteBook 16 Inch Laptop</h2>
+        <p>Price: $2299.95</p>
+        <button class="add-to-cart" onclick="addToCart('HP-EliteBook-16-Laptop', 2299.95)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="about-section">
+    <h1>Cords and Cables</h1>
+  </div>
+   
+  <div class="shopping-cart">
+    <div class="items">
+      <div class="item">
+        <img src=/Assets/Images/Computers/Ethernet.png>
+        <h2>15m Ethernet Cord</h2>
+        <p>Price: $31.50</p>
+        <p>15M long, 1.6 GBPS data transfer rate</p>
+        <button class="add-to-cart" onclick="addToCart('15M-Ethernet', 31.5)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/Ethernet.png>
+        <h2>20m Ethernet Cord</h2>
+        <p>Price: $45.60</p>
+        <p>20M long, 1.6 GBPS data transfer rate</p>
+        <button class="add-to-cart" onclick="addToCart('20M-Ethernet', 45.6)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/USB.png>
+        <h2>10m USB Extension Cord</h2>
+        <p>Price: $10.30</p>
+        <p>10m USB Extender, with male/female ports</p>
+        <button class="add-to-cart" onclick="addToCart('10m-USB', 10.30)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/USB.png>
+        <h2>5m USB Extension Cord</h2>
+        <p>Price: $6.59</p>
+        <p>5m USB Extender, with male/female ports</p>
+        <button class="add-to-cart" onclick="addToCart('5m-USB', 6.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/USB.png>
+        <h2>2m USB Extension Cord</h2>
+        <p>Price: $3.59</p>
+        <p>2m USB Extender, with male/female ports</p>
+        <button class="add-to-cart" onclick="addToCart('2m-USB', 3.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Computers/USB.png>
+        <h2>1m USB Extension Cord</h2>
+        <p>Price: $1.99</p>
+        <p>1m USB Extender, with male/female ports</p>
+        <button class="add-to-cart" onclick="addToCart('1m-USB', 1.99)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="about-section">
+    <h1>Server Parts</h1>
+    <p>Until September 1st, <b>we have a 50% Discount on all server parts!</b></p>
+  </div>
+  <div class="shopping-cart">
+    <div class="items">
+      <div class="item">
+        <img src=/Assets/Images/Servers/ServerCase.webp>
+        <h2>Small Server Case</h2>
+        <p>Price: <s>$75.00</s><b> $35.00</b></p>
+        <p>15cm by 10cm by 5cm, this server case is designed for small servers</p>
+        <button class="add-to-cart" onclick="addToCart('SmlServerCase', 35)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/ServerCase.webp>
+        <h2>Medium Server Case</h2>
+        <p>Price: <s>$110.50</s><b> $55.25</b></p>
+        <p>25cm by 10cm by 5cm, this server case is designed for a regular server</p>
+        <button class="add-to-cart" onclick="addToCart('MedServerCase', 55.25)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/ServerCase.webp>
+        <h2>Large Server Case</h2>
+        <p>Price: <s>$190.00</s><b> $95.00</b></p>
+        <p>45cm by 20cm by 10cm, this server case is designed for large servers</p>
+        <button class="add-to-cart" onclick="addToCart('LarServerCase', 95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/2tbHDDclassic.webp>
+        <h2>2TB Classic HDD</h2>
+        <p>Price: <s>$50.00</s><b> $25.00</b></p>
+        <p>Classic Hard-drive, which contains 2TB of storage for your servers other needs</p>
+        <button class="add-to-cart" onclick="addToCart('2tbHDD', 25)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/2tbHDDclassic.webp>
+        <h2>4TB Classic HDD</h2>
+        <p>Price: <s>$75.00</s><b> $37.50</b></p>
+        <p>Classic Hard-drive, which contains 4TB of storage for your servers other needs</p>
+        <button class="add-to-cart" onclick="addToCart('4tbHDD', 37.50)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/2tbHDDclassic.webp>
+        <h2>8TB Classic HDD</h2>
+        <p>Price: <s>$110.00</s><b> $55.00</b></p>
+        <p>Classic Hard-drive, which contains 8TB of storage for your servers other needs</p>
+        <button class="add-to-cart" onclick="addToCart('8tbHDD', 55)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/PrebuiltServer1.webp>
+        <h2>Small Prebuilt Server Package</h2>
+        <p>Price: <s>$4,695.00</s><b> $2,347.50</b></p>
+          <p>A small prebuit server case, with 128TB of storage data, using the latest Intel Xeon E series CPU</p>
+
+        <button class="add-to-cart" onclick="addToCart('Small-Prebuilt-Server', 2347.5)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/PrebuiltServer2.webp>
+        <h2>Medium Prebuilt Server Package</h2>
+        <p>Price: <s>$10,995.00</s><b> $5,497.50</b></p>
+          <p>A medium prebuit server case, with 512TB of storage data, using the latest Intel Xeon W series CPU</p>
+
+        <button class="add-to-cart" onclick="addToCart('Medium-Prebuilt-Server', 5497.50)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Servers/PrebuiltServer3.webp>
+        <h2>Large Prebuilt Server Package</h2>
+        <p>Price: <s>$25,105.00</s><b> $12,552.50 </b></p>
+        <p>A large prebuit server case, with 1024TB of storage data, using the latest Intel Xeon W series CPU</p>
+        <button class="add-to-cart" onclick="addToCart('Large-Prebuilt-Server', 12552.50)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h1>Mobile Phones</h1>
+    <p>The best phones for the best of the best, covering a wide range of price for the different needs of different people</p>
+  </div>
+  
+  <div class="shopping-cart">
+    <div class="items">
+      <div class="item">
+        <img src=/Assets/Images/Phones/Iphone14.webp>
+        <h2>iPhone 14 512GB</h2>
+        <p>Price: $1799.59</p>
+        <button class="add-to-cart" onclick="addToCart('Iphone-14-512', 1799.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Phones/Iphone14.webp>
+        <h2>iPhone 14 256GB</h2>
+        <p>Price: $1299.59</p>
+        <button class="add-to-cart" onclick="addToCart('Iphone-14-256', 1299.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Phones/Iphone14Pro.webp>
+        <h2>iPhone 14 Pro 256GB</h2>
+        <p>Price: $1999.59</p>
+        <button class="add-to-cart" onclick="addToCart('Iphone-14-Pro', 1999.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Phones/SamsungS23Ultra.webp>
+        <h2>Samsung S23 Ultra 1TB</h2>
+        <p>Price: $2599.59</p>
+        <button class="add-to-cart" onclick="addToCart('Samsung-S23-Ultra', 2599.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Phones/SamsungS23Plus.webp>
+        <h2>Samsung S23 Plus 256GB</h2>
+        <p>Price: $1599.59</p>
+        <button class="add-to-cart" onclick="addToCart('Samsung-S23-Plus-256', 1599.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Phones/SamsungS23Plus.webp>
+        <h2>Samsung S23 Plus 128GB</h2>
+        <p>Price: $1299.59</p>
+        <button class="add-to-cart" onclick="addToCart('Samsung-S23-Plus-128', 1299.59)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h1>Monitors and TVs</h1>
+    <p>From classic monitors to Large screen TVs.</p>
+  </div>
+  
+   
+  <div class="shopping-cart">
+    <div class="items">
+      <div class="item">
+        <img src=/Assets/Images/MonitorsTVs/Lenovo24Monitor.webp>
+        <h2>Lenovo 24" Monitor</h2>
+        <p>Price: $129.59</p>
+        <button class="add-to-cart" onclick="addToCart('Lenovo-24', 129.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/MonitorsTVs/Lenovo27Monitor.webp>
+        <h2>Lenovo 27" Monitor</h2>
+        <p>Price: $179.59</p>
+        <button class="add-to-cart" onclick="addToCart('Lenovo-27', 179.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/MonitorsTVs/Lenovo27CurvedMonitor.webp>
+        <h2>Lenovo 27" Curved Monitor</h2>
+        <p>Price: $189.59</p>
+        <button class="add-to-cart" onclick="addToCart('Lenovo-27-curved', 189.59)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/MonitorsTVs/Samsung55TV.webp>
+        <h2>Samsung 55" 4K TV</h2>
+        <p>Price: $1659.95</p>
+        <button class="add-to-cart" onclick="addToCart('Samsung-55-TV', 1659.95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/MonitorsTVs/Samsung55TV.webp>
+        <h2>Samsung 65" 4K TV</h2>
+        <p>Price: $1959.95</p>
+        <button class="add-to-cart" onclick="addToCart('Samsung-65-TV', 1959.95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/MonitorsTVs/Samsung55TV.webp>
+        <h2>Samsung 75" 4K TV</h2>
+        <p>Price: $2159.95</p>
+        <button class="add-to-cart" onclick="addToCart('Samsung-75-TV', 2159.95)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="about-section">
+    <h1>Software</h1>
+    <p>Divided between Operating systems and RAID software, meeting personal operating system needs and server software.</p>
+  </div>
+  
+   
+  <div class="shopping-cart">
+    <div class="items">
+      <div class="item">
+        <img src=/Assets/Images/Software/Windows10.webp>
+        <h2>Windows 10 Home</h2>
+        <p>Price: $70.00</p>
+        <p>Base windows model is good for home use!</p>
+        <button class="add-to-cart" onclick="addToCart('Win-10-Home', 70)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Software/Windows10.webp>
+        <h2>Windows 10 Pro</h2>
+        <p>Price: $95.99</p>
+        <p>For people who want a little more out of the OS</p>
+        <button class="add-to-cart" onclick="addToCart('Win-10-PRO', 95.99)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Software/Windows10.webp>
+        <h2>Windows 10 Enterprise</h2>
+        <p>Price: $105.99</p>
+        <p>For businesses and corporations</p>
+        <button class="add-to-cart" onclick="addToCart('Win-10-ENT', 105.99)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Software/Windows11.webp>
+        <h2>Windows 11 Home</h2>
+        <p>Price: $80.00</p>
+        <p>Latest and greatest windows model is good for home use!</p>
+        <button class="add-to-cart" onclick="addToCart('Win-11-Home', 80)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Software/Windows11.webp>
+        <h2>Windows 11 Pro</h2>
+        <p>Price: $99.95</p>
+        <p>For people who want a little more out of the OS</p>
+        <button class="add-to-cart" onclick="addToCart('Win-11-PRO', 99.95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Software/Windows11.webp>
+        <h2>Windows 11 Enterprise</h2>
+        <p>Price: $119.95</p>
+        <p>For businesses and corporations</p>
+        <button class="add-to-cart" onclick="addToCart('Win-11-ENT', 119.95)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src=/Assets/Images/Software/RAID1.webp>
+        <h2>SoftRaid 5 Pro</h2>
+        <p>Price: $59.95</p>
+        <p>The best software out there for server side RAID systems</p>
+        <button class="add-to-cart" onclick="addToCart('Soft-RAID-5', 59.95)">Add to Cart</button>
+        
+      </div>
+    </div>
+  </div>
+    
+  
+  <!--
+    Annoyingly I was unable to use the original cart system I wanted, so it is broken, And the cart does not save :,(
+
+    Maybe that is a good thing considering I would of saved credit card info and such
+    
+  -->
+  <div class="cart-items"> <!-- Cart with the class cart-items -->
+    <h2>Your Cart</h2> <!-- heading --> 
+    <ul id="cart"></ul>
+    <p>Total: $<span id="total">0</span></p> <!-- TOTAL AMOUNT OF MONEY -->
+    <button onclick="window.location.href='/Assets/Code/HTML/finalcart.html'">Purchase</button>
+  </div> <!-- purchase button -->
+  
+  
+  
+  
+  <script src="/Assets/Code/JS/store.js"></script> <!-- script -->
+</body>
+
+</html>

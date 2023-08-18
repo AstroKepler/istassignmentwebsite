@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/Assets/Code/CSS/login.css">
+  <link rel="stylesheet" href="/Assets/Code/CSS/signup.css">
+  <link rel="stylesheet" href="/Assets/Code/CSS/fpStyle.css">
+  <link rel="stylesheet" href="/Assets/Code/CSS/contactcss.css" />
+  <!--Nicely formatted stylesheets and the icon website-->
+</head>
+
+<body>
+
+
+
+  <div class="navbar"> <!--Navigtaion bar-->
+    <a href="/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="/Assets/Code/HTML/store.html"><i class="fa fa-fw fa-shopping-bag"></i> Store</a><!--sends to the store html page-->
+    <a href="/Assets/Code/HTML/finalcart.html"><i class="fa fa-fw fa-shopping-cart"></i> Cart</a> <!--sends to the final cart html page-->
+    <a href="/Assets/Code/HTML/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> <!--contact-->
+    <a href="/Assets/Code/HTML/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a class="active" href="/Assets/Code/HTML/signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+
+    <a href="/Assets/Code/HTML/faq.html"><i class="fa fa-fw fa-question-circle"></i> FAQ</a>
+  </div>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> <!--A button, which opens the popup which is below-->
+
+  <div id="id01" class="modal"> <!-- popup menu --> 
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="modal-content" id="contact-form">
+      <div class="container">
+        <h1>Sign Up</h1><!-- sign up pls -->
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          required> <!-- password validation -->
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> <!-- MORE password validation -->
+
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        <!-- the requirements as set out by the password validation -->
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="privacypolicy.html" style="color:dodgerblue">Terms &
+            Privacy</a>.</p> <!-- no one reads this -->
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button><!-- cancel -->
+          <button type="submit" class="signupbtn">Sign Up</button>
+          <script>
+
+          </script>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src=/Assets/Code/JS/signup.js></script>
+<!-- script -->
+
+</body>
+
+</html>
